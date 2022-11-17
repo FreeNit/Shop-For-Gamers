@@ -1,0 +1,12 @@
+// Animation
+$animation-param: (
+  'duration': 250ms,
+  'bezier': cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+// Variables
+:root {
+  --primary-text-color: #86e543;
+  --secondary-text-color: #ffffff;
+  --third-text-color: ##8d9289;
+}
