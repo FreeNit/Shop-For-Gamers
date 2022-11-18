@@ -24,6 +24,7 @@ p {
 }
 
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -86,6 +87,12 @@ body {
 }
 
 .logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
 
 a {
