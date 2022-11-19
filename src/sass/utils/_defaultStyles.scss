@@ -67,7 +67,7 @@ body {
     padding: 0 40px;
     width: 768px;
   }
-  @media screen and(min-width: 1280) {
+  @media screen and(min-width: 1280px) {
     width: 1280px;
   }
 }
@@ -85,7 +85,12 @@ body {
   margin: -1px;
 }
 
-.logo {
+.logo {font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }
 
 a {

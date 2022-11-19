@@ -1,0 +1,115 @@
+:root {
+  --foter-colour: #001414;
+  --foter-hover: #17573d;
+}
+.footer__retreat {
+  margin-top: 25px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+}
+.footer {
+  background-color: var(--foter-colour);
+  padding-top: 25px;
+  padding-bottom: 24px;
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.footer__menu__href {
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--secondary-text-color);
+  vertical-align: top;
+  border-bottom: 1px solid var(--foter-colour);
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid var(--primary-text-color);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer__tel__mail {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: var(--third-text-color);
+  &:not(:last-child) {
+    padding-bottom: 8px;
+  }
+  &:hover,
+  &:focus {
+    color: var(--primary-text-color);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.footer__title {
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-text-color);
+  margin-bottom: 8px;
+}
+.footer__menu__list {
+  max-height: 16px;
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.footer__soc {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 32px;
+  top: 106px;
+  gap: 32px;
+  @media screen and (min-width: 768px) {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    flex-direction: row;
+    gap: 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+.footer__contacts {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    margin-top: 0px;
+  }
+}
+.footer__top {
+  margin-top: 16px;
+}
+.foter__tabl {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.footer__color__icon {
+  color: var(--foter-colour);
+  display: flex;
+  background-color: var(--secondary-text-color);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: var(--primary-text-color);
+    color: var(--foter-hover);
+    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+.footer__logo {
+  display: flex;
+}
