@@ -1,0 +1,97 @@
+<section class="contacts">
+  <h3 class="cont-title">Сontacts</h3>
+  <picture>
+    <source
+      srcset="
+        ./images/contacts/desctop/keybord.jpg    1x,
+        ./images/contacts/desctop/keybord_x2.jpg 2x
+      "
+      media="(min-width:1280px)"
+    />
+    <source
+      srcset="
+        ./images/contacts/tablet/keybord.jpg    1x,
+        ./images/contacts/tablet/keybord_x2.jpg 2x
+      "
+      media="(min-width:768px)"
+    />
+    <source
+      srcset="
+        ./images/contacts/mobile/keybord.jpg    1x,
+        ./images/contacts/mobile/keybord_x2.jpg 2x
+      "
+      media="(max-width:767px)"
+    />
+    <img
+      src="./images/contacts/mobile/keybord.jpg"
+      class="cont-img"
+      alt="Game accessories"
+      width="480"
+    />
+  </picture>
+
+  <div class="container">
+    <div class="cont-wrap">
+      <div class="cont-field">
+        <ul class="cont-list list">
+          <li class="cont-item">
+            In case of queries about order handling and/or delay, drop us an
+            email at
+          </li>
+          <li class="cont-item">info@shopforgamers.com</li>
+        </ul>
+        <div class="cont-nav">
+          <ul class="nav-mail-list list">
+            <li class="cont-nav-item">Email</li>
+            <li>
+              <a href="mailto:sfg.info@gmail.com" class="nav-link"
+                >sfg.info@gmail.com</a
+              >
+            </li>
+          </ul>
+          <ul class="nav-phone-list list">
+            <li class="cont-nav-item">Phone number</li>
+            <li class="nav-phone-item">
+              <a href="tel:+380936432288" class="nav-link"
+                >+38 (093) 643 22 88</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380503454423" class="nav-link"
+                >+38 (050) 345 44 23</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cont-form-wrap">
+        <p class="cont-form-text">CONTACT US</p>
+        <form>
+          <input
+            type="text"
+            class="cont-imput"
+            name="cont-name"
+            placeholder="Name"
+          />
+          <input
+            type="email"
+            class="cont-imput"
+            name="cont-email"
+            placeholder="Email"
+          />
+          <div>
+            <label for="cont-mess" class="cont-label-text"
+              >Leave your message</label
+            >
+            <textarea
+              name="cont-mess"
+              id="cont-mess"
+              class="cont-comment"
+            ></textarea>
+          </div>
+          <button type="submit" class="cont-btn btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
