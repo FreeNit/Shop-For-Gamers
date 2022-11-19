@@ -122,11 +122,11 @@
   }
   .header__burger.active::before {
     transform: rotate(-45deg) translate(-6px, 6px);
-    // top: 0;
+    top: 2px;
   }
   .header__burger.active::after {
     transform: rotate(45deg) translate(-6px, -8px);
-    // bottom: 0;
+    bottom: 10px;
   }
   .header__menu {
     position: fixed;
@@ -211,11 +211,11 @@
   }
   .header__burger.active::before {
     transform: rotate(-45deg) translate(-6px, 6px);
-    // top: 0;
+    top: 2px;
   }
   .header__burger.active::after {
     transform: rotate(45deg) translate(-6px, -8px);
-    // bottom: 0;
+    bottom: 10px;
   }
   .header__menu {
     position: fixed;
