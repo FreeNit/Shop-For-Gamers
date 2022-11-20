@@ -1,45 +1,44 @@
 <section class="contacts">
-  <h3 class="cont-title">Сontacts</h3>
-  <picture>
-    <source
-      srcset="
-        ./images/contacts/desctop/keybord.jpg    1x,
-        ./images/contacts/desctop/keybord_x2.jpg 2x
-      "
-      media="(min-width:1280px)"
-    />
-    <source
-      srcset="
-        ./images/contacts/tablet/keybord.jpg    1x,
-        ./images/contacts/tablet/keybord_x2.jpg 2x
-      "
-      media="(min-width:768px)"
-    />
-    <source
-      srcset="
-        ./images/contacts/mobile/keybord.jpg    1x,
-        ./images/contacts/mobile/keybord_x2.jpg 2x
-      "
-      media="(max-width:767px)"
-    />
-    <img
-      src="./images/contacts/mobile/keybord.jpg"
-      class="cont-img"
-      alt="Game accessories"
-      width="480"
-    />
-  </picture>
-
+  <h3 class="cont-title container">Сontacts</h3>
+  <div class="cont-img">
+    <picture>
+      <source
+        srcset="
+          ./images/contacts/desctop/keybord.jpg    1x,
+          ./images/contacts/desctop/keybord_x2.jpg 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./images/contacts/tablet/keybord.jpg    1x,
+          ./images/contacts/tablet/keybord_x2.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/contacts/mobile/keybord.jpg    1x,
+          ./images/contacts/mobile/keybord_x2.jpg 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        src="./images/contacts/mobile/keybord.jpg"
+        alt="Game accessories"
+        width="480"
+      />
+    </picture>
+  </div>
   <div class="container">
     <div class="cont-wrap">
-      <div class="cont-field">
-        <ul class="cont-list list">
-          <li class="cont-item">
-            In case of queries about order handling and/or delay, drop us an
-            email at
-          </li>
-          <li class="cont-item">info@shopforgamers.com</li>
-        </ul>
+      <div>
+        <p class="cont-top-text">
+          In case of queries about order handling and/or delay, drop us an email
+          at
+        </p>
+        <p class="cont-bottom-text">info@shopforgamers.com</p>
+
         <div class="cont-nav">
           <ul class="nav-mail-list list">
             <li class="cont-nav-item">Email</li>
@@ -67,18 +66,26 @@
       <div class="cont-form-wrap">
         <p class="cont-form-text">CONTACT US</p>
         <form>
-          <input
-            type="text"
-            class="cont-imput"
-            name="cont-name"
-            placeholder="Name"
-          />
-          <input
-            type="email"
-            class="cont-imput"
-            name="cont-email"
-            placeholder="Email"
-          />
+          <div class="cont-form-field">
+            <input
+              type="text"
+              class="cont-imput"
+              name="cont-name"
+              id="cont-name"
+              placeholder="Name"
+            />
+            <label for="cont-name" class="cont-label">Name</label>
+          </div>
+          <div class="cont-form-field">
+            <input
+              type="email"
+              class="cont-imput"
+              name="cont-email"
+              id="cont-email"
+              placeholder="Email"
+            />
+            <label for="cont-email" class="cont-label">Email</label>
+          </div>
           <div>
             <label for="cont-mess" class="cont-label-text"
               >Leave your message</label
