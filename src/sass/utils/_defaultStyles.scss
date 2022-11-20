@@ -94,11 +94,13 @@ body {
   text-transform: uppercase;
   color: var(--secondary-text-color);
   &:focus {
-    text-shadow: 3px 3px 3px rgba(134, 229, 67, 1);
+    text-shadow: 0px 0px 2px var(--primary-text-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   @media screen and (min-width: 1280px) {
     &:hover {
-      text-shadow: 3px 3px 3px rgba(134, 229, 67, 1);
+      text-shadow: 0px 0px 2px var(--primary-text-colorprimary-text-color);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 }
