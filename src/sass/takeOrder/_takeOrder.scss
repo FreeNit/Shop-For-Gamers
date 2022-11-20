@@ -22,6 +22,11 @@
   padding-top: 120px;
   padding-left: 99px;
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 56px;
+    line-height: 1.18;
+  }
 }
 
 .page-take-order__title {
@@ -39,7 +44,7 @@
   font-size: 56px;
   padding-top: 51px;
   padding-bottom: 24px;
-  text-align: center;
+  // text-align: center;
   // vertical-align: top;
   }
 }
@@ -75,8 +80,15 @@
 .page-take__prices-container{
   display: flex;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 35%;
+    width: 40%;
     display: inline-grid;
+  }
+}
+
+.page-take-order__section{
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    display: flex;
   }
 }
 
@@ -92,6 +104,15 @@
     margin-left: auto;
     flex-wrap: wrap;
     padding-right: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // width: 100%;
+    // display: flex;
+    // padding-top: 0;
+    // margin-left: auto;
+    // flex-wrap: wrap;
+    // padding-right: 60px;
 
     // vertical-align: none;
   }
@@ -126,8 +147,9 @@
     padding-left: 0px;
     font-size: 48px;
     width: 100%;
-    padding-top: 0px;
+    padding-top: 56px;
     padding-left: 0px;
+    padding-bottom: 148px;
     }
 }
 
