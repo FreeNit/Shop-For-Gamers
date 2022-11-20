@@ -2,25 +2,51 @@
     // width: 1280px;
     background-color: #01383A;
 }
-.container-one {
-width: 100%;
-padding: 0 16px;
-}
+// .container-one {
+// width: 100%;
+// padding: 0 16px;
+// @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     padding: 0 40px;
+//     width: 768px;
+//   }
+//   @media screen and (min-width: 1280) {
+//     width: 1280px;
+//   }
+// }
 .blog-title {
     font-weight: 600;
 font-size: 24px;
 line-height: 1.67;
+margin-left: 16px;
 color: var(--secondary-text-color);
-margin-bottom: 30px;
+margin-bottom: 4px;
+@media screen and (min-width: 768px) {
+    font-size: 56px;
+line-height: 1.18;
+margin-left: 99px;
 }
-.blog-image {
-    padding: 0 0;
+@media screen and (min-width: 1280px) {
+    margin-left: 142px;
+    margin-bottom: 8px; 
 }
+}
+// .blog-image {
+//     padding: 0 0;
+// }
 .blog-list {
 }
+.blog-item {
+//   @media screen and (min-width: 768px) {
+// display: flex;
+// flex-wrap: wrap;
+// flex-direction: column;
+// }
+}
 .blog-container {
-    // display: block;
-    // gap:24px; 
+    width: 100%;
     outline: 2px solid tomato;
 }
 .blog-container:not(:last-child) {
@@ -33,6 +59,10 @@ margin-bottom: 30px;
     font-weight: 600;
 font-size: 24px;
 line-height: 1.67;
+@media screen and (min-width: 768px) {
+    font-size: 56px;
+line-height: 1;
+}
 color: var(--secondary-text-color);
 margin-bottom: 16px;
 }
@@ -40,6 +70,9 @@ margin-bottom: 16px;
     font-weight: 600;
 font-size: 16px;
 line-height: 1;
+@media screen and (min-width: 768px) {
+    font-size: 24px;
+}
 color: var(--secondary-text-color);
 margin-bottom: 8px;
 margin-top: 8px;
@@ -48,6 +81,10 @@ margin-top: 8px;
     font-weight: 600;
 font-size: 16px;
 line-height: 1;
+@media screen and (min-width: 768px) {
+    font-size: 24px;
+line-height: 1.17;
+}
 color: var(--third-text-color);
 margin-bottom: 8px;
 }
@@ -56,6 +93,7 @@ margin-bottom: 8px;
 font-size: 16px;
 line-height: 1.19;
 color: var(--secondary-text-color);
+margin-bottom: 8px;
 }
 .blog-link {
     font-weight: 600;
