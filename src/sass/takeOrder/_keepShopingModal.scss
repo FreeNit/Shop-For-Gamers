@@ -39,16 +39,25 @@
   align-items: center;
   justify-content: center;
   padding: 0;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
 }
 
 .modal__close-icon {
-  fill: #86e543;
+  @media screen and (min-width: 768px) {
+    width: 31.25px;
+    height: 31.25px;
+  }
 }
 
 .modal__title {
   font-weight: 600;
   font-size: 24px;
-  line-height: 1,17;
+  line-height: 1, 17;
   text-align: center;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
@@ -59,14 +68,14 @@
 
   @media screen and (min-width: 768px) {
     font-size: 56px;
-    line-height: 1,18;
+    line-height: 1, 18;
     max-width: 576px;
     margin-bottom: 56px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 64px;
-    line-height: 1,17;
+    line-height: 1, 17;
     max-width: 608px;
   }
 }
@@ -104,5 +113,4 @@
     font-size: 32px;
     line-height: 1.19;
   }
-
 }
