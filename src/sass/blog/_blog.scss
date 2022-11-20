@@ -51,6 +51,9 @@ margin-left: 99px;
 }
 .blog-item:not(:last-child) {
     margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    }
 }
 .blog-line {
 }
@@ -102,6 +105,9 @@ line-height: 1;
 color: var(--primary-text-color);
 display: block;
 text-align: end;
+@media screen and (min-width: 768px) {
+    font-size: 24px;
+}
 }
 .blog-decoration {
     // padding: 48px 104px;
