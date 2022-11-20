@@ -5,6 +5,8 @@
   left: 0;
   z-index: 50px;
   background-color: var(--light-button-text-color);
+  box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.8),
+    0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .header::before {
@@ -24,7 +26,6 @@
   justify-content: space-between;
   align-items: center;
   height: 136px;
-  //   background: linear-gradient(rgba(134, 229, 67, 0.7), rgba(134, 229, 67, 0.7));
 }
 
 .header__logo {
