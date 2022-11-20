@@ -32,7 +32,7 @@ main {
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/fons/desctop/background_3.jpg');
+    background-image: url('../images/fons/desctop/background_1.jpg');
     background-repeat: repeat-y;
     background-size: contain;
     margin: 0 auto;
@@ -41,7 +41,7 @@ main {
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
-        background-image: url('../images/fons/desctop/background_3_x2.jpg');
+        background-image: url('../images/fons/desctop/background_1_x2.jpg');
       }
     }
   }
