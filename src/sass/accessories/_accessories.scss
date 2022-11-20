@@ -1,0 +1,205 @@
+@mixin accessories($type: center) {
+  display: flex;
+  justify-content: $type;
+  align-items: center;
+}
+
+@mixin accessories-fonts($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+/* ////////// ACCESSORIES ////////// */
+
+.accessories {
+  padding: 48px 0 48px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 120px 0;
+  }
+}
+
+/* ////////// MENU ////////// */
+
+.menu {
+  @include accessories();
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 320px) {
+    gap: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    gap: 53px;
+    margin-bottom: 72px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 44px;
+  }
+
+  &__button {
+    @include accessories();
+    @include accessories-fonts(700, 16px, 1.18, none);
+    min-width: 124px;
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid var(--primary-text-color);
+    border-radius: 16px;
+    color: var(--primary-text-color);
+    background-color: transparent;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and(min-width:768px) {
+      width: 132px;
+      padding: 16px;
+    }
+    &:hover,
+    &:focus {
+      color: var(--light-button-text-color);
+      background-color: var(--primary-text-color);
+      box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+    }
+  }
+}
+
+/* ////////// TITLE ////////// */
+
+.title {
+  @include accessories-fonts(600, 24px, 1.16, none);
+  color: var(--secondary-text-color);
+
+  @media screen and (min-width: 768px) {
+    @include accessories-fonts(600, 24px, 1.16, none);
+  }
+}
+
+/* ////////// PRODUCT ////////// */
+
+.product {
+  @include accessories();
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    gap: 38px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 20px;
+  }
+
+  &__item {
+    max-width: 285px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 38px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 4);
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+  }
+  &__frame {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #86e543;
+    box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+
+    &:hover,
+    &:focus {
+      filter: drop-shadow(0px 4px 4px rgba(134, 229, 67, 0.2));
+    }
+  }
+
+  &__overlame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding: 16px;
+    background: var(--light-button-text-color);
+    transform: translateY(100%);
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover &__overlame {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &__overlametext {
+    @include accessories-fonts(null, 14px, 1.14, 0.03em);
+
+    color: var(--secondary-text-color);
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__namecost {
+    padding: 8px;
+  }
+  &__name {
+    @include accessories-fonts(600, 22px, 1.16, none);
+    font-weight: 600;
+    margin-bottom: 11px;
+
+    color: var(--primary-text-color);
+  }
+
+  &__cost {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__costbefore {
+    @include accessories-fonts(600, 14px, 100%, none);
+    text-decoration-line: line-through;
+
+    color: var(--third-text-color);
+  }
+  &__costnow {
+    @include accessories-fonts(600, 20px, 100%, none);
+    margin-right: 20px;
+
+    color: var(--primary-text-color);
+  }
+}
+
+//////// buttonCircle /////////
+
+// .buttoncircle {
+//     margin-top: 24px;
+//     @media screen and(win-width:768px) {
+//         margin-top: 24px;
+//    }
+// }
+
+/* ////////// IMAGE ////////// */
+
+.image {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* ////////// SVG ////////// */
+
+// .svg-line {
+//   width: 768px;
+//   height: 19px;
+// }
