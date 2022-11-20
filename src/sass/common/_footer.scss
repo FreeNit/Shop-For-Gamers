@@ -22,11 +22,14 @@
   line-height: 100%;
   color: var(--secondary-text-color);
   vertical-align: top;
-  border-bottom: 1px solid var(--foter-colour);
+  border-bottom: 1px solid transparent;
+  transition-property: color, background-color;
+  transition-duration: 0.3s, 0.2s;
+  transition-timing-function: ease-in-out;
+  transition: border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     border-bottom: 1px solid var(--primary-text-color);
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -36,13 +39,13 @@
   line-height: 19px;
   text-transform: capitalize;
   color: var(--third-text-color);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   &:not(:last-child) {
     padding-bottom: 8px;
   }
   &:hover,
   &:focus {
     color: var(--primary-text-color);
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -67,7 +70,7 @@
   top: 106px;
   gap: 32px;
   @media screen and (min-width: 768px) {
-    position: relative;
+    position: static;
     top: 0px;
     left: 0px;
     flex-direction: row;
@@ -102,12 +105,14 @@
   height: 24px;
   width: 24px;
   border-radius: 50%;
+  transition-property: color, background-color;
+  transition-duration: 0.3s, 0.2s;
+  transition-timing-function: ease-in-out;
+
   &:hover,
   &:focus {
     background-color: var(--primary-text-color);
-    color: var(--foter-hover);
-    transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--secondary-text-color);
   }
 }
 .footer__logo {
