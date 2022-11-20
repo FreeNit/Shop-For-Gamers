@@ -3,7 +3,7 @@
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 50px;
+  z-index: 10px;
   background-color: var(--light-button-text-color);
   box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.8),
     0px 4px 10px rgba(255, 255, 255, 0.1);
@@ -37,6 +37,12 @@
 .header__burger {
   display: none;
   cursor: pointer;
+  background-color: inherit;
+  border: none;
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.8),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
 }
 
 .header__list {
