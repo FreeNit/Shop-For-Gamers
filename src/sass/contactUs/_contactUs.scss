@@ -163,6 +163,7 @@ img {
   width: 100%;
   height: 24px;
   outline: transparent;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     cursor: pointer;
@@ -219,6 +220,7 @@ img {
   outline: var(--primary-text-color);
   background-color: transparent;
   margin-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:focus,
   &:hover {
     cursor: pointer;
@@ -241,8 +243,12 @@ img {
   font-size: 16px;
   line-height: 1.19;
   text-transform: uppercase;
-  filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
-    drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    filter: drop-shadow(0px 4px 10px rgba(255, 255, 255, 0.1))
+      drop-shadow(0px 4px 20px rgba(255, 255, 255, 0.4));
+  }
   @media screen and (min-width: 768px) {
     padding: 16px 112px;
   }
