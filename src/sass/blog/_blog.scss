@@ -69,6 +69,11 @@ line-height: 1;
 color: var(--secondary-text-color);
 margin-bottom: 16px;
 }
+.blog-image {
+    @media screen and (min-width: 768px) {
+    border-radius: 12px;
+}
+}
 .blog-top-text {
     font-weight: 600;
 font-size: 16px;
