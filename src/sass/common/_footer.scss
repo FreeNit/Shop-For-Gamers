@@ -123,8 +123,9 @@
 .footer__logo {
   display: flex;
   min-width: 116px;
-  justify-content: center;
+  
   @media screen and (min-width: 1280px) {
     min-width: 187px;
+    justify-content: center;
   }
 }
