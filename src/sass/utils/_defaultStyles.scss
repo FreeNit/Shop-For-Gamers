@@ -95,13 +95,9 @@ body {
   color: var(--secondary-text-color);
   transition: text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:focus {
+  &:focus,
+  &:hover {
     text-shadow: 0px 0px 2px var(--primary-text-color);
-  }
-  @media screen and (min-width: 1280px) {
-    &:hover {
-      text-shadow: 0px 0px 2px var(--primary-text-color);
-    }
   }
 }
 
