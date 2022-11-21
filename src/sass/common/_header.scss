@@ -76,11 +76,12 @@
   color: var(--light-button-text-color);
   position: relative;
   z-index: 3;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:focus,
   &:hover {
     box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
       0px 4px 10px rgba(255, 255, 255, 0.1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
