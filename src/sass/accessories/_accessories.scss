@@ -2,59 +2,6 @@
 // ///// Accessories /////
 // ******************************
 
-
-body {
-  background-color: var(--light-button-text-color);
-  background-size: cover;
-
-  @media screen and (min-width: 320px) {
-    background-color: var(--light-button-text-color);
-    background-image: url(/src/images/fons/mobile/background-1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-color: var(--light-button-text-color);
-      background-image: url(/src/images/fons/mobile/background-1_x2.jpg);
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    background-color: var(--light-button-text-color);
-    background-image: url(/src/images/fons/tablet/background_1.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-color: var(--light-button-text-color);
-      background-image: url(/src/images/fons/tablet/background_1_x2.jpg);
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-color: var(--light-button-text-color);
-    background-image: url(/src/images/fons/desctop/background_3.jpg);
-    background-size: cover;
-
-    @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-      background-color: var(--light-button-text-color);
-      background-image: url(/src/images/fons/desctop/background_3_x2.jpg);
-      background-size: cover;
-    }
-  }
-}
-
-
 @mixin accessories ($type: center) {
   display: flex;
   justify-content: $type;
