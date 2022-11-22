@@ -12,6 +12,10 @@ html {
   box-sizing: inherit;
 }
 
+main {
+  background-color: #01383a;
+}
+
 h1,
 h2,
 h3,
@@ -64,6 +68,11 @@ body {
   @media screen and (min-width: 480px) {
     width: 480px;
   }
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+  }
+
   @media screen and (min-width: 768px) {
     padding: 0 40px;
     width: 768px;
@@ -85,6 +94,7 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
 
 .logo {
   font-weight: 700;
