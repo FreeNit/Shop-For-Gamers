@@ -126,6 +126,8 @@ picture > img {
   .container {
   }
   .blog-article__title {
+    font-size: 56px;
+    line-height: 1;
   }
   .blog-article__top-container {
     position: relative;
@@ -133,6 +135,10 @@ picture > img {
   }
   .blog-article__picture-container {
     display: flex;
+  }
+  .blog-article__img {
+    width: 387px;
+    height: 336px;
   }
   .blog-article__author--container {
     position: absolute;
