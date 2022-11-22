@@ -1,0 +1,47 @@
+// main {
+//   background-color: #01383a;
+//   @media screen and (max-width: 767px) {
+//     background-image: url('../images/fons/mobile/background-1.jpg');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     margin: 0 auto;
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       & {
+//         background-image: url('../images/fons/mobile/background-1_x2.jpg');
+//       }
+//     }
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url('../images/fons/tablet/background_1.jpg');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     margin: 0 auto;
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       & {
+//         background-image: url('../images/fons/tablet/background_1_x2.jpg');
+//       }
+//     }
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     background-image: url('../images/fons/desctop/background_3.jpg');
+//     background-repeat: repeat-y;
+//     background-size: contain;
+//     margin: 0 auto;
+//     @media (min-device-pixel-ratio: 2),
+//       (-webkit-min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       & {
+//         background-image: url('../images/fons/desctop/background_3_x2.jpg');
+//       }
+//     }
+//   }
+// }
