@@ -1,5 +1,4 @@
 .blog {
-    // width: 1280px;
     background-color: #01383A;
     padding-top: 40px;
     padding-bottom: 112px;
@@ -8,21 +7,6 @@
     padding-bottom: 120px;
     }
 }
-// .container-one {
-// width: 100%;
-// padding: 0 16px;
-// outline: 2px solid tomato;
-// @media screen and (min-width: 480px) {
-//     width: 480px;
-//   }
-//   @media screen and (min-width: 768px) {
-//     padding: 0 40px;
-//     width: 768px;
-//   }
-//   @media screen and (min-width: 1280) {
-//     width: 1280px;
-//   }
-// }
 .blog-title {
     font-weight: 600;
 font-size: 24px;
@@ -45,24 +29,6 @@ margin-left: 99px;
         // display: none;
     }
 }
-.blog-list {
-}
-.blog-item {
-//   @media screen and (min-width: 768px) {
-// display: flex;
-// flex-wrap: wrap;
-// flex-direction: column;
-// }
-}
-// .for-tablet {
-//     @media screen and (min-width: 768px) {
-//         display: flex;
-//     }
-// }
-// .blog-container {
-//     width: 100%;
-//     outline: 2px solid tomato;
-// }
 .for-tablet {
     display: block;
     @media screen and (min-width: 768px) {
@@ -71,13 +37,6 @@ margin-left: 99px;
     margin-bottom: 16px;
 }
 }
-// .for-desktop {
-//     width: 1200px;
-//     display: flex;
-//     // @media screen and (max-width: 1279px) {
-//     //     display: none;
-//     // }
-// }
 .blog-item:not(:last-child) {
     margin-bottom: 24px;
     @media screen and (min-width: 768px) {
@@ -88,7 +47,6 @@ margin-left: 99px;
     margin-right: 120px;
 }
 .blog-item-title {
-    // max-width: 288px;
     font-weight: 600;
 font-size: 24px;
 line-height: 1.17;
@@ -167,17 +125,14 @@ text-align: end;
     font-size: 24px;
 }
 }
-.blog-decoration {
-    // padding: 48px 104px;
-}
 .image {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     margin-left: -16px;
     margin-right: -16px;
 }
 }
 .blog-image {
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
     width: 100vw;
 }
 }
