@@ -1,0 +1,41 @@
+:root {
+  --primary-text-color: #86e543;
+  --secondary-text-color: #ffffff;
+  --third-text-color: #8d9289;
+  --light-button-text-color: #01383a;
+}
+
+img {
+  width: 100%;
+}
+.article {
+  padding-top: 248px;
+}
+.container {
+}
+.blog-article__title {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1;
+  color: var(--secondary-text-color);
+}
+.blog-article__author {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--primary-text-color);
+}
+.blog-article__date {
+}
+.blog-article_paragraf {
+}
+.article-list {
+}
+.article-list__title {
+}
+.article-list__paragraf {
+}
+.article-list__item {
+}
+.article-list__link {
+}
