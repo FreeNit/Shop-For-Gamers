@@ -21,11 +21,27 @@
   }
 }
 
+.cont-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  @media screen and (min-width: 481px) {
+    width: 480px;
+    padding: 0 16px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
+}
+
 .cont-img {
   width: 100%;
   margin-bottom: 16px;
   @media screen and (min-width: 768px) {
-    padding: 0 40px;
     margin-bottom: 32px;
   }
   @media screen and (min-width: 1280px) {
@@ -73,7 +89,7 @@ img {
   margin-bottom: 24px;
   @media screen and (min-width: 768px) {
     display: flex;
-    gap: 32px;
+    gap: 132px;
   }
   @media screen and (min-width: 1280px) {
     flex-direction: column;
@@ -117,12 +133,12 @@ img {
   &:focus::after {
     content: '';
     width: 100%;
-    height: 4px;
+    height: 1px;
     border-radius: 2px;
     background-color: var(--primary-text-color);
     display: block;
     position: absolute;
-    bottom: 0;
+    bottom: -8px;
   }
   @media screen and (min-width: 1280px) {
     line-height: 1.17;
@@ -157,6 +173,8 @@ img {
 }
 
 .cont-imput {
+  color: var(--secondary-text-color);
+  letter-spacing: 0.03em;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid var(--primary-text-color);
@@ -167,7 +185,6 @@ img {
   &:focus,
   &:hover {
     cursor: pointer;
-    color: var(--secondary-text-color);
   }
   &::placeholder {
     color: transparent;
@@ -175,7 +192,7 @@ img {
   &:focus + .cont-label,
   &:not(:placeholder-shown) + .cont-label {
     transform: translateY(-20px);
-    color: var(--third-text-color);
+    color: #cdcdcd;
     font-size: 14px;
   }
   @media screen and (min-width: 768px) {
@@ -212,6 +229,7 @@ img {
 }
 
 .cont-comment {
+  color: var(--secondary-text-color);
   display: block;
   width: 100%;
   height: 95px;
@@ -224,7 +242,6 @@ img {
   &:focus,
   &:hover {
     cursor: pointer;
-    color: var(--secondary-text-color);
   }
   @media screen and (min-width: 768px) {
     margin-bottom: 34px;
