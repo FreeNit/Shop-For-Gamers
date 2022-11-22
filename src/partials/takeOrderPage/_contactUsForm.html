@@ -1,57 +1,53 @@
 
-<div class="container">
-<p class="contact__info">order infirmation</p>
-<!-- <div class="order"> -->
+<div class="container"> 
+  <p class="contact__info">order infirmation</p>
   <form class="order">
-<div class="contact">
-<div class="contact__case">
-        <label class="contact__lable" for="name"></label>
+<div class="wrapper">
         <input class="contact__input" type="text" name="name" id="name" placeholder="Name" required>
-        </div>
-<div class="contact__case">
-        <label class="contact__lable" for="Email"></label>
         <input class="contact__input" type="text" name="Email" id="Email" placeholder="Email" required>
-        </div>
         
-<div class="contact__case">
-  <label class="contact__lable" for="Color Option"></label>
-        <input class="contact__input" list="Color Option" name="Color Option" placeholder="Color Option" required>
-        <datalist class="detalist" id="Color Option">
-  <option>K9D Black Orange</option>
-  <option>K9D Silver Gray</option>
-  <option>K9U White Blue</option>
-</datalist>
+  <div class="select">
+    <!-- <input class="contact__input" list="Color Option" name="Color Option" placeholder="Color Option" required> -->
+    <select id="Color Option">
+      <option value="Color Option" selected>Color Option</option>
+      <option value="K9D Black Orange">K9D Black Orange</option>
+      <option value="K9D Silver Gray">K9D Silver Gray</option>
+      <option value="K9U White Blue">K9U White Blue</option>
+    </select>
+    <span class="focus"></span>
+  </div>
+<div class="select">
+    <!-- <input class="contact__input" list="Quantity" name="Color Option" placeholder="Color Option" required> -->
+    <select id="Quantity">
+      <option selected>Quantity</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+    </select>
+    <span class="focus"></span>
+  </div>
+<div class="select">
+    <!-- <input class="contact__input" list="payment" name="payment" placeholder="payment" required> -->
+    <select id="payment">
+      <option selected>Payment</option>
+      <option value="visa">Visa</option>
+    </select>
+    <span class="focus"></span>
+  </div>
 </div>
-        <div class="contact__case">
-        <label class="contact__lable" for="Quantity"></label>
-        <input class="contact__input" list="Quantity" name="Quantity" placeholder="Quantity" required>
-        <datalist class="detalist" id="Quantity">
-  <option>1</option>
-  <option>2</option>
-  <option>3</option>
-</datalist> 
-</div>
-      <div class="contact__case">
-        <label class="contact__lable" for="Payment"></label>
-        <input class="contact__input" list="Payment" name="Payment" placeholder="Payment" required>
-          <datalist class="detalist" id="Payment">
-  <option>K9D</option>
-  <option>K9D</option>
-</datalist>
-      </div>
-      </div>
-      <div class="comment">
+
+<div class="comment">
           <label class="commentar" for="comment">Leave your message</label>
         <textarea class="teaxtarea" name="comment" id="comment" rows="10"></textarea>
       </div>
       </form>
-      <!-- </div> -->
+
       <div class="button">
         <div class="button__buy">
-        <button class="button__now" type="submit">Buy it now</button>
+        <button class="button__now" type="submit">buy it now</button>
         </div>
         <div class="button__add">
-        <button class="button__cart" type="submit">ADD TO CART</button>
+        <button class="button__card" type="submit">add to card</button>
         </div>
       </div>
+
 </div>
