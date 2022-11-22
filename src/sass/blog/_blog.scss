@@ -170,3 +170,14 @@ text-align: end;
 .blog-decoration {
     // padding: 48px 104px;
 }
+.image {
+    @media screen and (max-width: 768px) {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+}
+.blog-image {
+    @media screen and (max-width: 768px) {
+    width: 100vw;
+}
+}
