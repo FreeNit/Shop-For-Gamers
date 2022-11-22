@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,16 +11,19 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/blog.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- Section Header -->
     <include src="./partials/common/_header.html"></include>
     <!-- Section Mobile Menu -->
     <include src="./partials/common/_mobileMenu.html"></include>
-    <!-- Section Blog Article -->
-    <include src="./partials/blogArticlePage/_blogArticle.html"></include>
+    <main>
+      <!-- Section Blog Article -->
+      <include src="./partials/blogArticlePage/_blogArticle.html"></include>
+    </main>
     <!-- Section Footer -->
     <include src="./partials/common/_footer.html"></include>
+
+    <script src="./index.js"></script>
   </body>
 </html>

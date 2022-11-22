@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,20 +11,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- Section Header -->
     <include src="./partials/common/_header.html"></include>
     <!-- Section Mobile Menu -->
     <include src="./partials/common/_mobileMenu.html"></include>
-    <!-- Section Hero -->
-    <include src="./partials/indexPage/_hero.html"></include>
-    <!-- Section Slider -->
-    <include src="./partials/indexPage/_slider.html"></include>
-    <!-- Section Sale -->
-    <include src="./partials/indexPage/_sale.html"></include>
-    <!-- Section Footer -->
+    <main>
+      <!-- Section Hero -->
+      <include src="./partials/indexPage/_hero.html"></include>
+      <!-- Section Slider -->
+      <include src="./partials/indexPage/_slider.html"></include>
+      <!-- Section Sale -->
+      <include src="./partials/indexPage/_sale.html"></include>
+      <!-- Section Footer -->
+    </main>
     <include src="./partials/common/_footer.html"></include>
+
+    <script src="./index.js"></script>
   </body>
 </html>
