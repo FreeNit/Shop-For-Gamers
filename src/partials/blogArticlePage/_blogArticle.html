@@ -1,5 +1,5 @@
 <article class="blog-article">
-  <div class="container">
+  <div class="container blogArticle-thumb">
     <h1 class="blog-article__title">
       Guide to Picking The Right Gaming Headset
     </h1>
@@ -8,28 +8,28 @@
         <picture>
           <source
             srcset="
-              /src/images/blog/mobile/guide-to-picking.jpg    1x,
-              /src/images/blog/mobile/guide-to-picking_x2.jpg 2x
+              ./images/blog/mobile/guide-to-picking.jpg    1x,
+              ./images/blog/mobile/guide-to-picking_x2.jpg 2x
             "
             media="(max-width: 767px)"
           />
           <source
             srcset="
-              /src/images/blog/tablet/guide-to-picking.jpg    1x,
-              /src/images/blog/tablet/guide-to-picking_x2.jpg 2x
+              ./images/blog/tablet/guide-to-picking.jpg    1x,
+              ./images/blog/tablet/guide-to-picking_x2.jpg 2x
             "
             media="(min-width: 768px)"
           />
           <source
             srcset="
-              /src/images/blog/desctop/guide-to-picking.jpg    1x,
-              /src/images/blog/desctop/guide-to-picking_x2.jpg 2x
+              ./images/blog/desctop/guide-to-picking.jpg    1x,
+              ./images/blog/desctop/guide-to-picking_x2.jpg 2x
             "
             media="(min-width: 1200px)"
           />
           <img
             class="blog-article__img"
-            src="/src/images/blog/desctop/guide-to-picking.jpg"
+            src="./images/blog/desctop/guide-to-picking.jpg"
             alt="guide-to-picking"
           />
         </picture>
@@ -38,23 +38,66 @@
           <p class="blog-article__date">Updated on September 21, 2022</p>
         </div>
       </div>
-      <div class="blog-article__top-part">
-        <p class="blog-article__paragraf blog-article__paragraf--first">
-          Learn how to choose an amazing gaming headset with this checklist of
-          just 9 surprisingly simple steps.
-        </p>
-        <p class="blog-article__paragraf">
-          Gaming headsets offer a handy and practical solution to any and all of
-          your gaming audio needs. But, as with any kind of technology, there is
-          a surplus of options on the market, and not all of them are worth
-          buying.
-        </p>
-        <p class="blog-article__paragraf">
-          To make sure you get your money well spent, we’ve provided a checklist
-          of the major factors or questions you should have answered. After you
-          complete the checklist, you’ll have a much better idea on what to look
-          for in a gaming headset
-        </p>
+      <div></div>
+
+      <!-- FOR DESKTOP -->
+      <div class="blog-article__picture-container-desktop">
+        <picture>
+          <source
+            srcset="
+              ./images/blog/mobile/guide-to-picking.jpg    1x,
+              ./images/blog/mobile/guide-to-picking_x2.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <source
+            srcset="
+              ./images/blog/tablet/guide-to-picking.jpg    1x,
+              ./images/blog/tablet/guide-to-picking_x2.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/blog/desctop/guide-to-picking.jpg    1x,
+              ./images/blog/desctop/guide-to-picking_x2.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="blog-article__img"
+            src="./images/blog/desctop/guide-to-picking.jpg"
+            alt="guide-to-picking"
+          />
+        </picture>
+      </div>
+
+      <div class="blog-article-thumb">
+        <div class="blog-article__author--container-desktop">
+          <h4 class="blog-article__author">By Ray Ian Ampoloquio</h4>
+          <p class="blog-article__date">Updated on September 21, 2022</p>
+        </div>
+
+        <div class="blog-article__top-part">
+          <p class="blog-article__paragraf blog-article__paragraf--first">
+            Learn how to choose an amazing gaming headset with this checklist of
+            just 9 surprisingly simple steps.
+          </p>
+          <p class="blog-article__paragraf">
+            Gaming headsets offer a handy and practical solution to any and all
+            of your gaming audio needs. But, as with any kind of technology,
+            there is a surplus of options on the market, and not all of them are
+            worth buying.
+          </p>
+          <p
+            class="blog-article__paragraf blog-article__paragraf-desktop--last"
+          >
+            To make sure you get your money well spent, we’ve provided a
+            checklist of the major factors or questions you should have
+            answered. After you complete the checklist, you’ll have a much
+            better idea on what to look for in a gaming headset
+          </p>
+        </div>
       </div>
     </div>
     <div class="article-list">
@@ -62,7 +105,7 @@
         9-Step Checklist to Pick an Amazing Gaming Headset
       </h4>
       <p class="article-list__paragraf">Gaming Headphones vs Gaming Headsets</p>
-      <ol>
+      <ol class="article-list__list">
         <li class="article-list__item">
           <a class="article-list__link" href="#"
             >What’s Your Gaming Platform?
