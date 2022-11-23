@@ -21,6 +21,8 @@
   font-size: 16px;
   line-height: 100%;
   color: var(--secondary-text-color);
+  padding-top: 6px;
+  padding-bottom: 6px;
   vertical-align: top;
   border-bottom: 1px solid transparent;
   transition-property: color, background-color;
@@ -37,6 +39,8 @@
   display: block;
   font-size: 16px;
   line-height: 18px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   text-transform: capitalize;
   color: var(--third-text-color);
   transition: border-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -54,7 +58,7 @@
   font-size: 16px;
   line-height: 19px;
   color: var(--secondary-text-color);
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .footer__menu__list {
   max-height: 16px;
@@ -93,7 +97,7 @@
     margin-right: 138px;
   }
 }
-.footer__top {
+.footer__bottom {
   margin-top: 16px;
 }
 .foter__tabl {
@@ -123,7 +127,7 @@
 .footer__logo {
   display: flex;
   min-width: 116px;
-  
+
   @media screen and (min-width: 1280px) {
     min-width: 187px;
     justify-content: center;

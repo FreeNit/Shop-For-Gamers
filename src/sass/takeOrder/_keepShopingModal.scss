@@ -1,6 +1,6 @@
 .modal {
   width: 90%;
-  padding: 100px 29px;
+  padding: 100px 20px;
   background: var(--modal-bg-color);
   position: absolute;
   top: 50%;
@@ -10,19 +10,19 @@
 
   @media screen and (min-width: 480px) {
     width: 272px;
-    height: 395px;
+    height: 383px;
   }
 
   @media screen and (min-width: 768px) {
     width: 688px;
-    height: 524px;
-    padding: 88px 25px;
+    height: 566px;
+    padding: 88px 56px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 768px;
-    height: 524px;
-    padding: 88px 65px;
+    height: 602px;
+    padding: 88px 80px;
   }
 }
 
@@ -31,7 +31,7 @@
   height: 40px;
   border-radius: 50%;
   background-color: transparent;
-  border-color: transparent;
+  border: transparent;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -39,8 +39,8 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
   &:hover,
   &:focus {
     box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
@@ -61,28 +61,29 @@
   line-height: 1.17;
   text-align: center;
   color: var(--secondary-text-color);
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: 480px) {
-    max-width: 214px;
+    max-width: 232px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 56px;
     line-height: 1.18;
-    max-width: 638px;
-    margin-bottom: 80px;
+    max-width: 576px;
+    margin-bottom: 56px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 64px;
-    line-height: 1.17;
+    line-height: 1, 17;
+    max-width: 608px;
   }
 }
 
 .modal__button {
   display: block;
-  padding: 16px 51px;
+  padding: 16px 25px;
   background-color: var(--primary-text-color);
   border-radius: 16px;
   text-align: center;
@@ -92,7 +93,7 @@
 
   @media screen and (min-width: 768px) {
     max-width: 306px;
-    padding: 16px 82px;
+    padding: 16px 30px;
   }
 
   &:hover,
