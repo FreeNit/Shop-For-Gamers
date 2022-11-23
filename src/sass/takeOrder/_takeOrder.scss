@@ -34,21 +34,23 @@
       background-image: url('../images/svg/tablet/con_topLine.svg'),
         url('../images/svg/tablet/con_bottomLine.svg'),
         url('../images/fons/tablet/background_1_x2.jpg');
+      background-position: top 306px left, top 314px left, center;
     }
     @include media(1280px) {
-      background-image: url('../images/svg/tablet/topLine.svg'),
-        url('../images/svg/tablet/bottomLine.svg'),
+      background-image: url('../images/svg/desktop/topLine_2.svg'),
+        url('../images/svg/desktop/bottomLine_2.svg'),
         url('../images/fons/desctop/background_1.jpg');
+      background-position: top 240px left, top 248px left, top left;
+
       @include retina {
         background-image: url('../images/svg/desktop/topLine_2.svg'),
           url('../images/svg/desktop/bottomLine_2.svg'),
           url('../images/fons/desctop/background_1_x2.jpg');
-        background-position: top 326px left, top 334px left, center;
+        background-position: top 240px left, top 248px left, top left;
       }
     }
   }
 }
-
 .page-take-order__name {
   font-family: 'Roboto';
   font-style: normal;
