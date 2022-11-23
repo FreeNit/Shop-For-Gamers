@@ -19,3 +19,27 @@ logo.addEventListener('click', function () {
     body.classList.toggle('lock');
   }
 });
+
+
+// **********************
+// ! MODAL - Open CLOSE
+// **********************
+
+const modalButtonClick = (
+	buttonSelector,
+	modalSelector,
+	closeSelector,
+	toggle
+) => {
+	const button = document.querySelector(buttonSelector);
+	const modal = document.querySelector(modalSelector);
+	const close = modal.querySelector(closeSelector);
+
+	[button, close].forEach((item) => {
+		item.addEventListener("click", () => modal.classList.toggle(toggle));
+	});
+};
+
+modalButtonClick("#addtocart-button", "#modal-letgo", ".modal__close-btn", "is-hidden"); 
+modalButtonClick("#buyitnow-button", "#modal-keepshopping", ".modal__close-btn", "is-hidden"); 
+modalButtonClick("#send-button", "#modal-ok", ".modal__close-btn", "is-hidden");
