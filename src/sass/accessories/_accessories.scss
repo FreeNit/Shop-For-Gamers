@@ -225,3 +225,18 @@
 //   width: 768px;
 //   height: 19px;
 // }
+
+.blogArticle-thumb {
+  background-image: url('./../images/decorLines/mobile/topLine.svg'),
+    url('./../images/decorLines/mobile/bottomLine.svg');
+  background-repeat: no-repeat;
+  background-position: top 53px left 0, top 63px left 0;
+  background-size: 100%, 100%;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url('./../images/decorLines/tablet/topLine.svg'),
+      url('./../images/decorLines/tablet/bottomLine.svg');
+    background-repeat: no-repeat;
+    background-position: top 130px left 0, top 140px left 0;
+  }
+}
