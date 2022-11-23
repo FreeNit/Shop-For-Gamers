@@ -7,19 +7,19 @@
     display: block;
   }
 }
-.sale-container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 17px;
-  @media screen and (min-width: 768px) {
-    padding: 0 80px;
-    width: 768px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding: 40px;
-    width: 1280px;
-  }
-}
+// .sale-container {
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 0 17px;
+//   @media screen and (min-width: 768px) {
+//     padding: 0 80px;
+//     width: 768px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     padding: 40px;
+//     width: 1280px;
+//   }
+// }
 .sale {
   background-color: var(--light-button-text-color);
   background-image: url(/src/images/fons/mobile/background-1.jpg);
@@ -57,6 +57,7 @@
   font-size: 24px;
   line-height: calc(28px / 24px);
   color: var(--secondary-text-color);
+  
   @media screen and (min-width: 768px) {
     font-size: 56px;
     line-height: calc(66px / 56px);
