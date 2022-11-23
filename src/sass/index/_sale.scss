@@ -25,13 +25,12 @@
   background-image: url('../images/svg/mobile/topLine_2.svg'),
     url('../images/svg/mobile/bottomLine_2.svg'),
     url(/src/images/fons/mobile/background-1.jpg);
-  background-position: top 130 left, top 135 left, top left;
+  background-position: top 26 left, top 31 left, top left;
 
   background-repeat: no-repeat;
   background-size: 100%;
 
   margin: auto;
-  padding-top: 104px;
   padding-bottom: 48px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -39,14 +38,14 @@
     background-image: url('../images/svg/mobile/topLine_2.svg'),
       url('../images/svg/mobile/bottomLine_2.svg'),
       url(/src/images/fons/mobile/background-1_x2.jpg);
-    background-position: top 130 left, top 134 left, top left;
+    background-position: top 26 left, top 31 left, top left;
   }
 
   @media screen and (min-width: 768px) {
     background-image: url('../images/svg/tablet/topLine.svg'),
       url('../images/svg/tablet/bottomLine.svg'),
       url('../images/fons/tablet/background_1.jpg');
-    background-position: top 170px left, top 178px left, top left;
+    background-position: top 66px left, top 74px left, top left;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -54,7 +53,7 @@
       background-image: url('../images/svg/tablet/topLine.svg'),
         url('../images/svg/tablet/bottomLine.svg'),
         url('../images/fons/tablet/background_1_x2.jpg');
-      background-position: top 170px left, top 178px left, top left;
+      background-position: top 66px left, top 74px left, top left;
     }
   }
 
@@ -62,7 +61,7 @@
     background-image: url('../images/svg/desktop/topLine_2.svg'),
       url('../images/svg/desktop/bottomLine_2.svg'),
       url('../images/fons/desctop/background_2.jpg');
-    background-position: top 166px left, top 174px left, top left;
+    background-position: top 62px left, top 70px left, top left;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -70,7 +69,7 @@
       background-image: url('../images/svg/desktop/topLine_2.svg'),
         url('../images/svg/desktop/bottomLine_2.svg'),
         url('../images/fons/desctop/background_2_x2.jpg');
-      background-position: top 166px left, top 174px left, top left;
+      background-position: top 62px left, top 70px left, top left;
     }
   }
 }
