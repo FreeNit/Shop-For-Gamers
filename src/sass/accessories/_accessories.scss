@@ -239,9 +239,11 @@
     background-repeat: no-repeat;
     background-position: top 130px left 0, top 140px left 0;
   }
+
   @media screen and (min-width: 1280px) {
     background-image: url('/src/images/decorLines/desktop/topLine_accessories.svg'),
-    url('/src/images/decorLines/desktop/bottomLine_accessories.svg');
+      url('/src/images/decorLines/desktop/bottomLine_accessories.svg');
     background-repeat: no-repeat;
     background-position: top 130px left 0, top 140px left 0;
+  }
 }
