@@ -19,7 +19,7 @@
   background-image: url('../images/svg/mobile/topLine.svg'),
     url('../images/svg/mobile/bottomLine.svg');
   background-repeat: no-repeat;
-  background-position: top 172px left, top 176px left, center;
+  background-position: top 172px left, top 180px left, center;
   background-size: 100%;
   @include media(768px) {
     padding-top: 256px;
