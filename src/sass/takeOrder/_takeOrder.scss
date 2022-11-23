@@ -25,7 +25,6 @@
   background-position: top 205px left, top 213px left, center;
   background-size: 100%;
   @include media(768px) {
-    margin-top: 136px;
     background-image: url('../images/svg/tablet/con_topLine.svg'),
       url('../images/svg/tablet/con_bottomLine.svg'),
       url('../images/fons/tablet/background_1.jpg');
@@ -63,7 +62,7 @@
   padding-top: 40px;
   display: flex;
 
-  @media screen and (min-width: 768px) and (max-width: 1280px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 56px;
     line-height: 1.18;
     padding-top: 120px;
