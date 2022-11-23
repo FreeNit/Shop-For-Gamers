@@ -22,10 +22,10 @@
   background-image: url('../images/svg/mobile/topLine.svg'),
     url('../images/svg/mobile/bottomLine.svg');
   background-repeat: no-repeat;
-  background-position: top 172px left, top 180px left, center;
+  background-position: top 205px left, top 213px left, center;
   background-size: 100%;
   @include media(768px) {
-    padding-top: 256px;
+    margin-top: 136px;
     background-image: url('../images/svg/tablet/con_topLine.svg'),
       url('../images/svg/tablet/con_bottomLine.svg'),
       url('../images/fons/tablet/background_1.jpg');
@@ -38,11 +38,12 @@
     @include media(1280px) {
       background-image: url('../images/svg/tablet/topLine.svg'),
         url('../images/svg/tablet/bottomLine.svg'),
-        url('../images/fons/desctop/background_2.jpg');
+        url('../images/fons/desctop/background_1.jpg');
       @include retina {
-        background-image: url('../images/svg/desktop/topLine.svg'),
-          url('../images/svg/desktop/bottomLine.svg'),
-          url('../images/fons/desctop/background_2_x2.jpg');
+        background-image: url('../images/svg/desktop/topLine_2.svg'),
+          url('../images/svg/desktop/bottomLine_2.svg'),
+          url('../images/fons/desctop/background_1_x2.jpg');
+        background-position: top 326px left, top 334px left, center;
       }
     }
   }
@@ -71,7 +72,7 @@
     font-size: 56px;
     font-weight: 500;
     line-height: 1.18;
-    padding-left: 142px;
+    padding-left: 102px;
     margin-bottom: 75px;
   }
 }
