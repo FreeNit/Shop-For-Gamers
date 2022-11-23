@@ -48,7 +48,7 @@
 
   &__button {
     @include accessories ();
-    @include accessories-fonts (700, 16px, 1.18, none);
+    @include accessories-fonts (700, 16px, 1.18, null);
     min-width: 124px;
     padding: 8px;
     cursor: pointer;
@@ -80,11 +80,11 @@
 
 .title {
   // margin-left: 20px;
-  @include accessories-fonts (600, 24px, 1.16, none);
+  @include accessories-fonts (600, 24px, 1.16, null);
   color: var(--secondary-text-color);
 
   @media screen and (min-width: 768px) {
-    @include accessories-fonts (600, 56px, 1.17, none);
+    @include accessories-fonts (600, 56px, 1.17, null);
     margin-left: 98px;
   }
 }
@@ -172,7 +172,7 @@
   }
 
   &__name {
-    @include accessories-fonts (600, 22px, 1.16, none);
+    @include accessories-fonts (600, 22px, 1.16, null);
     font-weight: 600;
     margin-bottom: 11px;
 
@@ -186,14 +186,14 @@
   }
 
   &__costbefore {
-    @include accessories-fonts (600, 14px, 100%, none);
+    @include accessories-fonts (600, 14px, 100%, null);
     text-decoration-line: line-through;
 
     color: var(--third-text-color);
   }
 
   &__costnow {
-    @include accessories-fonts (600, 20px, 100%, none);
+    @include accessories-fonts (600, 20px, 100%, null);
     margin-right: 20px;
 
     color: var(--primary-text-color);
