@@ -78,13 +78,13 @@
 /* ////////// TITLE ////////// */
 
 .title {
-  margin-left: 20px;
+  // margin-left: 20px;
   @include accessories-fonts (600, 24px, 1.16, none);
   color: var(--secondary-text-color);
 
   @media screen and (min-width: 768px) {
     @include accessories-fonts (600, 56px, 1.17, none);
-    margin-left: 120px;
+    margin-left: 98px;
   }
 }
 
@@ -228,22 +228,22 @@
 
 .blogArticle-thumb {
   background-image: url('/src/images/decorLines/mobile/topLine_accessories.svg'),
-    url('/src/images/decorLines/desktop/bottomLine_accessories.svg');
+    url('/src/images/decorLines/mobile/bottomLine_accessories.svg');
   background-repeat: no-repeat;
-  background-position: top 53px left 0, top 63px left 0;
+  background-position: 0px 153px, 0 158px;
   background-size: 100%, 100%;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: url('/src/images/decorLines/tablet/topLine_accessories.svg'),
       url('/src/images/decorLines/tablet/bottomLine_accessories.svg');
     background-repeat: no-repeat;
-    background-position: top 130px left 0, top 140px left 0;
+    background-position: 0 167px, 0 176px;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url('/src/images/decorLines/desktop/topLine_accessories.svg'),
       url('/src/images/decorLines/desktop/bottomLine_accessories.svg');
-    background-repeat: no-repeat;
-    background-position: top 130px left 0, top 140px left 0;
+      background-repeat: no-repeat;
+      background-position: 1px 140px, -1px 149px;
   }
 }
