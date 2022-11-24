@@ -1,0 +1,14 @@
+.carousel-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 200px;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  border: 2px solid var(--primary-text-color);
+
+  //   height: 506px;
+}

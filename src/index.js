@@ -52,3 +52,10 @@ modalButtonClick(
   'is-hidden'
 );
 modalButtonClick('#send-button', '#modal-ok', '.modal__close-btn', 'is-hidden');
+
+// **********************
+// ! SLIDER
+// **********************
+
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselImage = document.querySelectorAll('.carousel-slide img');
