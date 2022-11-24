@@ -1,80 +1,47 @@
-.container{
-@media screen and(min-width: 320px){
-max-width: 350px;
-height: 100%;
-
-    }
-@media screen and(min-width: 768px) {
-max-width: 780px;
-    height: 100%;
-    }
- @media screen and(min-width: 1280px) {
-max-width: 1280px;
-padding-top: 120px;
-padding-bottom: 159px;
-height: 100%;
- }
+.slider {
+  padding-top: 120px;
+  padding-bottom: 160px;
 }
 
 .swiper {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  //   overflow: auto;
+
+  &-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    margin-bottom: -30px;
+  }
+
+  &-pagination-bullet-active {
+    background-color: #fff;
+  }
 }
 
-.swiper {
-@media screen and(min-width: 320px){
- max-width: 600px;
- 
-}
-  @media screen and(min-width: 768px) {
-max-width: 768px;
-   
-}
- @media screen and(min-width: 1280px) {
-max-width: 1280px;
+.swiper-slide {
+  background: #01383a;
 
-
- }
-}
-
-
-.swiper-pagination{
-    @media screen and(min-width: 320px) {
-    display: flex;
-    
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
-@media screen and(min-width: 768px) {
-    display: flex;
-   
-}
-@media screen and(min-width: 1280px) {
-display: flex;
-padding-top: 23px;
-justify-content: center;
-    padding-bottom: 115px;
-
-}
-}
-
-    .is-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            border: 0;
-            padding: 0;
-    
-            white-space: nowrap;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            overflow: hidden;
-            outline: 0;
-            outline-offset: 0;
-        }
-
-.img{
-@media screen and(min-width: 1280px) {
-    width: 100%;
-}
+.swiper-slide img {
+  display: block;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
 }
