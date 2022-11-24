@@ -123,18 +123,18 @@
     display: flex;
     flex-direction: column;
     cursor: pointer;
-  }
 
-  &__link:hover,
-  &__link:focus{
-    box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2)
+    &:hover,
+    &:focus {
+      box-shadow: 0px 3px 3px rgba(97, 162, 58, 0.2), 0px 3px 3px rgba(94, 236, 54, 0.5), 0px 3px 3px rgba(17, 168, 26, 0.2)
+    }
   }
 
   &__frame {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    outline: 1px solid #86e543;
+    border: 1px solid #86e543;
   }
 
   &__overlame {
@@ -226,7 +226,19 @@
   @media screen and (min-width: 1280px) {
     background-image: url('/src/images/decorLines/desktop/topLine_accessories.svg'),
       url('/src/images/decorLines/desktop/bottomLine_accessories.svg');
-      background-repeat: no-repeat;
-      background-position: 1px 140px, -1px 149px;
+    background-repeat: no-repeat;
+    background-position: 1px 140px, -1px 149px;
   }
+}
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.containerFilter {
+  overflow: hidden;
 }
