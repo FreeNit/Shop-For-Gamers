@@ -78,9 +78,9 @@ body {
     width: 768px;
   }
 
-  
   @media screen and (min-width: 1280px) {
     width: 1280px;
+    padding: 0 40px;
   }
 }
 
@@ -96,7 +96,6 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
 
 .logo {
   font-weight: 700;
@@ -151,4 +150,3 @@ a {
   visibility: hidden;
   pointer-events: none;
 }
-
