@@ -212,6 +212,10 @@
 }
 
 .blogArticle-thumb {
+  @media screen and (max-width: 768px) {
+    width: 320px;
+  }
+
   background-image: url('../images/svg/mobile/topLine_3.svg'),
     url('../images/svg/mobile/bottomLine_3.svg');
   background-repeat: no-repeat;

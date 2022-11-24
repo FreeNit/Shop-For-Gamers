@@ -65,8 +65,8 @@ body {
   padding: 0 16px;
   // outline: 2px solid tomato;
 
-  @media screen and (min-width: 320px) {
-    width: 320px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
 
   @media screen and (max-width: 768px) {
@@ -78,7 +78,6 @@ body {
     width: 768px;
   }
 
-  
   @media screen and (min-width: 1280px) {
     width: 1280px;
     padding: 0 40px;
@@ -97,7 +96,6 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
-
 
 .logo {
   font-weight: 700;
@@ -152,4 +150,3 @@ a {
   visibility: hidden;
   pointer-events: none;
 }
-
