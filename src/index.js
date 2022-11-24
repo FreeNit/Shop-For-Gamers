@@ -40,13 +40,13 @@ const modalButtonClick = (
 };
 
 modalButtonClick(
-  '#addtocart-button',
+  '.addtocart-button',
   '#modal-letgo',
   '.modal__close-btn',
   'is-hidden'
 );
 modalButtonClick(
-  '#buyitnow-button',
+  '.buyitnow-button',
   '#modal-keepshopping',
   '.modal__close-btn',
   'is-hidden'
