@@ -1,47 +1,22 @@
 // main {
-//   background-color: #01383a;
-//   @media screen and (max-width: 767px) {
-//     background-image: url('../images/fons/mobile/background-1.jpg');
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     margin: 0 auto;
-//     @media (min-device-pixel-ratio: 2),
-//       (-webkit-min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       & {
-//         background-image: url('../images/fons/mobile/background-1_x2.jpg');
-//       }
-//     }
-//   }
+//   background-image: url('/src/images/decorLines/mobile/topLine_accessories.svg'),
+//     url('/src/images/decorLines/mobile/bottomLine_accessories.svg');
+//   background-repeat: no-repeat;
+//   background-position: 0px 153px, 0 158px;
+//   background-size: 100%, 100%;
 
-//   @media screen and (min-width: 768px) {
-//     background-image: url('../images/fons/tablet/background_1.jpg');
+//   @media screen and (min-width: 768px) and (max-width: 1279px) {
+//     background-image: url('/src/images/decorLines/tablet/topLine_accessories.svg'),
+//       url('/src/images/decorLines/tablet/bottomLine_accessories.svg');
 //     background-repeat: no-repeat;
-//     background-size: cover;
-//     margin: 0 auto;
-//     @media (min-device-pixel-ratio: 2),
-//       (-webkit-min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       & {
-//         background-image: url('../images/fons/tablet/background_1_x2.jpg');
-//       }
-//     }
+//     background-position: 0 167px, 0 176px;
 //   }
 
 //   @media screen and (min-width: 1280px) {
-//     background-image: url('../images/fons/desctop/background_3.jpg');
-//     background-repeat: repeat-y;
-//     background-size: contain;
-//     margin: 0 auto;
-//     @media (min-device-pixel-ratio: 2),
-//       (-webkit-min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       & {
-//         background-image: url('../images/fons/desctop/background_3_x2.jpg');
-//       }
-//     }
+//     background-image: url('/src/images/decorLines/desktop/topLine_accessories.svg'),
+//       url('/src/images/decorLines/desktop/bottomLine_accessories.svg'),
+//       url('/src/images/fons/desctop/');
+//     background-repeat: no-repeat;
+//     background-position: 1px 140px, -1px 149px;
 //   }
 // }
