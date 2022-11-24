@@ -18,6 +18,38 @@
 /* ////////// ACCESSORIES ////////// */
 
 .accessories {
+  // background-image: url('../images/svg/mobile/topLine.svg'),
+  //   url('../images/svg/mobile/bottomLine.svg');
+  // background-repeat: no-repeat;
+  // background-position: top 172px left, top 180px left, center;
+  // background-size: 100%;
+
+  // @include media(768px) {
+  //   background-image: url('../images/svg/tablet/con_topLine.svg'),
+  //     url('../images/svg/tablet/con_bottomLine.svg'),
+  //     url('../images/fons/tablet/background_1.jpg');
+  //   background-position: top 306px left, top 314px left, center;
+
+  //   @include retina {
+  //     background-image: url('../images/svg/tablet/con_topLine.svg'),
+  //       url('../images/svg/tablet/con_bottomLine.svg'),
+  //       url('../images/fons/tablet/background_1_x2.jpg');
+  //   }
+
+  //   @include media(1280px) {
+  //     background-image: url('../images/svg/desktop/topLine.svg'),
+  //       url('../images/svg/desktop/bottomLine.svg'),
+  //       url('../images/fons/desctop/background_3.jpg');
+  //     background-position: top 448px left, top 456px left, center;
+
+  //     @include retina {
+  //       background-image: url('../images/svg/desktop/topLine.svg'),
+  //         url('../images/svg/desktop/bottomLine.svg'),
+  //         url('../images/fons/desctop/background_3_x2.jpg');
+  //       background-position: top 448px left, top 456px left, center;
+  //     }
+  //   }
+  // }
   padding: 121px 0 48px 0;
 
   @media screen and (min-width: 768px) {
@@ -119,6 +151,7 @@
 
   &__link {
     display: flex;
+    border-radius: 12px;
     flex-direction: column;
     cursor: pointer;
   }
