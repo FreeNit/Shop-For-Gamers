@@ -212,14 +212,16 @@
 }
 
 .blogArticle-thumb {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 320px;
   }
 
   background-image: url('../images/svg/mobile/topLine_3.svg'),
-    url('../images/svg/mobile/bottomLine_3.svg');
+  url('../images/svg/mobile/bottomLine_3.svg');
   background-repeat: no-repeat;
-  background-position: top 195px left, top 201px left, center;
+  background-position: top 195px left,
+  top 201px left,
+  center;
   background-size: 100%;
 
   @include media(768px) {
@@ -250,16 +252,19 @@
     }
   }
 
+
   @media screen and (min-width: 1280px) {
     background-image: url('/src/images/decorLines/desktop/topLine_accessories.svg'),
       url('/src/images/decorLines/desktop/bottomLine_accessories.svg');
     background-repeat: no-repeat;
     background-position: 1px 140px, -1px 149px;
 
-  padding-top: 40px;
-  @media screen and (min-width: 768px) {
-    padding-top: 120px;
+    padding-top: 40px;
 
+    @media screen and (min-width: 768px) {
+      padding-top: 120px;
+
+    }
   }
 }
 
