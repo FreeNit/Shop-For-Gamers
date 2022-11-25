@@ -7,19 +7,17 @@
           class="contact__input"
           type="text"
           name="name"
-          pattern="[A-Za-z0-9]{6,}"
-          id="name"
+          id="nameField"
           placeholder="Name"
           required
         />
         <input
           class="contact__input"
-          type="text"
+          type="email"
           name="Email"
-          pattern="[A-Za-z0-9]{6,}"
-          id="Email"
           placeholder="Email"
           required
+          id="emailField"
         />
 
         <div class="select">
@@ -64,6 +62,7 @@
             id="buyitnow-button"
             class="buyitnow-button button__now"
             type="submit"
+            disabled
           >
             buy it now
           </button>
@@ -73,6 +72,7 @@
             id="addtocart-button"
             class="addtocart-button button__card"
             type="submit"
+            disabled
           >
             add to card
           </button>
@@ -82,7 +82,12 @@
 
     <div class="button-desktop">
       <div class="button__buy">
-        <button class="buyitnow-button button__now" type="submit">
+        <button
+          id="buyitnow-button"
+          class="buyitnow-button button__now"
+          type="submit"
+          disabled
+        >
           buy it now
         </button>
       </div>
@@ -91,6 +96,7 @@
           id="addtocart-button"
           class="addtocart-button button__card"
           type="submit"
+          disabled
         >
           add to card
         </button>

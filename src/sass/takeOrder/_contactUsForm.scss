@@ -339,3 +339,19 @@ select {
     flex-basis: calc((100% - 20px) / 2);
   }
 }
+
+.button__card:disabled,
+.button__card[disabled],
+.button__now:disabled,
+.button__now[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    box-shadow: none;
+    filter: none;
+  }
+}
