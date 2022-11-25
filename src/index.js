@@ -61,14 +61,6 @@ modalButtonClick('#send-button', '#modal-ok', '.modal__close-btn', 'is-hidden');
 //   $('.slider').slick();
 // });
 
-$('.one-time').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true,
-});
-
 // $('.slider').slick({
 //   // normal options...
 //   infinite: false,
