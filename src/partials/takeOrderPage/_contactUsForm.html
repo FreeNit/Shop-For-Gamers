@@ -1,0 +1,100 @@
+<div class="container">
+  <p class="contact__info">order information</p>
+  <form action="javascript:void(0);" autocomplete="off" class="order">
+    <div class="form-content-wrapper">
+      <div class="wrapper">
+        <input
+          class="contact__input"
+          type="text"
+          name="name"
+          pattern="[A-Za-z0-9]{6,}"
+          id="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          class="contact__input"
+          type="text"
+          name="Email"
+          pattern="[A-Za-z0-9]{6,}"
+          id="Email"
+          placeholder="Email"
+          required
+        />
+
+        <div class="select">
+          <select name="Color Option" id="color-option">
+            <option value="Color Option" selected>Color Option</option>
+            <option value="K9D Black Orange">K9D Black Orange</option>
+            <option value="K9D Silver Gray">K9D Silver Gray</option>
+            <option value="K9U White Blue">K9U White Blue</option>
+          </select>
+          <span class="focus"></span>
+        </div>
+        <div class="select">
+          <select name="Quantity" id="quantity">
+            <option selected>Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+          <span class="focus"></span>
+        </div>
+        <div class="select">
+          <select name="payment" id="payment">
+            <option selected>Payment</option>
+            <option value="visa">Visa</option>
+          </select>
+
+          <span class="focus"></span>
+        </div>
+      </div>
+      <div class="comment">
+        <label class="commentar" for="comment">Leave your message</label>
+        <textarea
+          class="teaxtarea"
+          name="comment"
+          id="comment"
+          rows="10"
+        ></textarea>
+      </div>
+
+      <div class="button button-mobile-tablet">
+        <div class="button__buy">
+          <button
+            id="buyitnow-button"
+            class="buyitnow-button button__now"
+            type="submit"
+          >
+            buy it now
+          </button>
+        </div>
+        <div class="button__add">
+          <button
+            id="addtocart-button"
+            class="addtocart-button button__card"
+            type="submit"
+          >
+            add to card
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-desktop">
+      <div class="button__buy">
+        <button class="buyitnow-button button__now" type="submit">
+          buy it now
+        </button>
+      </div>
+      <div class="button__add">
+        <button
+          id="addtocart-button"
+          class="addtocart-button button__card"
+          type="submit"
+        >
+          add to card
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
