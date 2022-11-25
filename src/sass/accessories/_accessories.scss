@@ -18,10 +18,10 @@
 /* ////////// ACCESSORIES ////////// */
 
 .accessories {
-  padding: 121px 0 48px 0;
+  padding: 144px 0 48px 0;
 
   @media screen and (min-width: 768px) {
-    padding: 152px 0px 120px 0px;
+    padding: 256px 0px 120px 0px;
   }
 }
 
@@ -219,8 +219,8 @@
   background-image: url('../images/svg/mobile/topLine_3.svg'),
   url('../images/svg/mobile/bottomLine_3.svg');
   background-repeat: no-repeat;
-  background-position: top 195px left,
-  top 201px left,
+  background-position: top 154px left,
+  top 158px left,
   center;
   background-size: 100%;
 
@@ -228,26 +228,26 @@
     background-image: url('../images/svg/tablet/topLine_2.svg'),
       url('../images/svg/tablet/bottomLine_2.svg'),
       url('../images/fons/tablet/background_1.jpg');
-    background-position: top 308px left, top 316px left, center;
+    background-position: top 182px left, top 190px left, center;
 
     @include retina {
       background-image: url('../images/svg/tablet/topLine_2.svg'),
         url('../images/svg/tablet/bottomLine_2.svg'),
         url('../images/fons/tablet/background_1_x2.jpg');
-      background-position: top 308px left, top 316px left, center;
+      background-position: top 182px left, top 190px left, center;
     }
 
     @include media(1280px) {
       background-image: url('../images/svg/desktop/topLine.svg'),
         url('../images/svg/desktop/bottomLine.svg'),
         url('../images/fons/desctop/background_3.jpg');
-      background-position: top 286px left, top 316px left, center;
+      background-position: top 261px left, top 269px left, center;
 
       @include retina {
         background-image: url('../images/svg/desktop/topLine.svg'),
           url('../images/svg/desktop/bottomLine.svg'),
           url('../images/fons/desctop/background_3_x2.jpg');
-        background-position: top 286px left, top 316px left, center;
+        background-position: top 141px left, top 149px left, center;
       }
     }
   }
@@ -257,12 +257,12 @@
     background-image: url('/src/images/decorLines/desktop/topLine_accessories.svg'),
       url('/src/images/decorLines/desktop/bottomLine_accessories.svg');
     background-repeat: no-repeat;
-    background-position: 1px 140px, -1px 149px;
+    background-position: 0px 141px, 0px 149px;
 
-    padding-top: 40px;
+    // padding-top: 40px;
 
     @media screen and (min-width: 768px) {
-      padding-top: 120px;
+      // padding-top: 120px;
 
     }
   }
