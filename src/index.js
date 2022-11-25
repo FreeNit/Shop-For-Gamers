@@ -57,5 +57,41 @@ modalButtonClick('#send-button', '#modal-ok', '.modal__close-btn', 'is-hidden');
 // ! SLIDER
 // **********************
 
-const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImage = document.querySelectorAll('.carousel-slide img');
+// $(document).ready(function () {
+//   $('.slider').slick();
+// });
+
+$('.one-time').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+});
+
+// $('.slider').slick({
+//   // normal options...
+//   infinite: false,
+
+//   // the magic
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 3,
+//         infinite: true,
+//       },
+//     },
+//     {
+//       breakpoint: 600,
+//       settings: {
+//         slidesToShow: 2,
+//         dots: true,
+//       },
+//     },
+//     {
+//       breakpoint: 300,
+//       settings: 'unslick', // destroys slick
+//     },
+//   ],
+// });
