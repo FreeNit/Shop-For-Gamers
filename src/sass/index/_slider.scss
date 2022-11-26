@@ -2,6 +2,10 @@
   padding-top: 120px;
 }
 
+.slider img {
+  width: 100%;
+}
+
 .slick-dots li.slick-active button:before {
   color: var(--secondary-text-color);
 }
