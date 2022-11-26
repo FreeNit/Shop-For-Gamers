@@ -6,7 +6,11 @@ $('.one-time').slick({
   speed: 5000,
   autoplaySpeed: 5000,
   infinite: true,
-  speed: 300,
+  speed: 3000,
+  infinite: true,
+  pauseOnFocus: true,
+  pauseOnHover: true,
+  pauseOnDotsHover: true,
   slidesToShow: 1,
   adaptiveHeight: true,
 });
