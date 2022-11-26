@@ -8,8 +8,8 @@ const modalLetsGoClose_btn = document.querySelector('#letsGo-close');
 
 // Form Fields
 const form = document.querySelector('#form');
-const buyBtn = document.querySelector('.buyitnow-button');
-const addToCartBtn = document.querySelector('.addtocart-button');
+const buyBtns = document.querySelectorAll('.buyitnow-button');
+const addToCartBtns = document.querySelectorAll('.addtocart-button');
 
 // Validation Patterns
 const namePattern = /^([a-zA-Z0-9_-]){3,12}$/;
@@ -118,21 +118,29 @@ function formValidation() {
 }
 
 // Form Submit Validation
-[buyBtn, addToCartBtn].forEach(item => {
-  item.addEventListener('click', e => {
+for (const btn of addToCartBtns) {
+  btn.addEventListener('click', e => {
     formValidation();
 
     if (form.classList.contains('invalid')) {
       return;
     } else {
-      if (e.target.classList.contains('buyitnow-button')) {
-        modalKeepShopping.classList.toggle('is-hidden');
-      } else {
-        modalLetsGo.classList.toggle('is-hidden');
-      }
+      modalLetsGo.classList.toggle('is-hidden');
     }
   });
-});
+}
+
+for (const btn of buyBtns) {
+  btn.addEventListener('click', e => {
+    formValidation();
+
+    if (form.classList.contains('invalid')) {
+      return;
+    } else {
+      modalKeepShopping.classList.toggle('is-hidden');
+    }
+  });
+}
 
 // Close modal window - Keep Shopping
 modalKeepShoppingClose_btn.addEventListener('click', function () {

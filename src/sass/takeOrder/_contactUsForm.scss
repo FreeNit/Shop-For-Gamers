@@ -1,7 +1,10 @@
 .button-desktop {
-  display: none;
+  position: absolute;
+  z-index: -100;
 
   @media screen and (min-width: 1280px) {
+    position: static;
+    z-index: 0;
     display: flex;
     justify-content: center;
     column-gap: 20px;
