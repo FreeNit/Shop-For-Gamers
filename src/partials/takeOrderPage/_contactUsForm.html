@@ -1,8 +1,9 @@
 <div class="container">
   <p class="contact__info">order information</p>
-  <form action="javascript:void(0);" autocomplete="off" class="order">
+  <form action="javascript:void(0);" autocomplete="off" class="order" id="form">
     <div class="form-content-wrapper">
       <div class="wrapper">
+        <!-- Name Input -->
         <input
           class="contact__input"
           type="text"
@@ -10,7 +11,9 @@
           id="nameField"
           placeholder="Name"
           required
+          onkeyup="nameValidation()"
         />
+        <!-- EMAIL input -->
         <input
           class="contact__input"
           type="email"
@@ -18,11 +21,14 @@
           placeholder="Email"
           required
           id="emailField"
+          onkeyup="emailValidation()"
         />
 
         <div class="select">
-          <select name="Color Option" id="color-option">
-            <option value="Color Option" selected>Color Option</option>
+          <select name="Color Option" selected="" id="color-option">
+            <option value="Color Option" selected disabled hidden>
+              Color Option
+            </option>
             <option value="K9D Black Orange">K9D Black Orange</option>
             <option value="K9D Silver Gray">K9D Silver Gray</option>
             <option value="K9U White Blue">K9U White Blue</option>
@@ -62,7 +68,6 @@
             id="buyitnow-button"
             class="buyitnow-button button__now"
             type="submit"
-            disabled
           >
             buy it now
           </button>
@@ -72,7 +77,6 @@
             id="addtocart-button"
             class="addtocart-button button__card"
             type="submit"
-            disabled
           >
             add to card
           </button>
@@ -86,7 +90,6 @@
           id="buyitnow-button"
           class="buyitnow-button button__now"
           type="submit"
-          disabled
         >
           buy it now
         </button>
@@ -96,7 +99,6 @@
           id="addtocart-button"
           class="addtocart-button button__card"
           type="submit"
-          disabled
         >
           add to card
         </button>

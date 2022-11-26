@@ -77,6 +77,10 @@
   border-color: var(--primary-text-color);
   outline-color: transparent;
   color: #ffffff;
+
+  &.err {
+    border-color: var(--error-border-color);
+  }
 }
 
 .standard-select {
@@ -113,6 +117,12 @@ select {
   grid-template-areas: 'select';
   align-items: center;
   position: relative;
+
+  select {
+    &.err {
+      border-bottom: 2px solid var(--error-border-color);
+    }
+  }
 
   select,
   &::after {
@@ -337,21 +347,5 @@ select {
   .wrapper,
   .comment {
     flex-basis: calc((100% - 20px) / 2);
-  }
-}
-
-.button__card:disabled,
-.button__card[disabled],
-.button__now:disabled,
-.button__now[disabled] {
-  border: 1px solid #999999;
-  background-color: #cccccc;
-  color: #666666;
-  box-shadow: none;
-
-  &:hover,
-  &:focus {
-    box-shadow: none;
-    filter: none;
   }
 }
