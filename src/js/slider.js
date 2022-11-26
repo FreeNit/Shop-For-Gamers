@@ -11,6 +11,8 @@ $('.one-time').slick({
   pauseOnFocus: true,
   pauseOnHover: true,
   pauseOnDotsHover: true,
+  swipe: true,
+  touchThreshold: 10,
   slidesToShow: 1,
   adaptiveHeight: true,
 });
