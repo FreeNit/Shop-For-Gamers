@@ -1,6 +1,16 @@
 .slider {
+  margin-top: 160px;
   padding-top: 120px;
   padding-bottom: 160px;
+
+  background-image: url('../images/fons/desctop/background_1.jpg');
+  @include retina {
+    background-image: url('../images/fons/desctop/background_1_x2.jpg');
+  }
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left;
 }
 
 .swiper {

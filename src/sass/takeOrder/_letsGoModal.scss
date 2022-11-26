@@ -1,0 +1,116 @@
+.modal {
+  width: 90%;
+  padding: 100px 44px;
+  background: var(--modal-bg-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 480px) {
+    width: 272px;
+    height: 367px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+    height: 500px;
+    padding: 88px 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 768px;
+    height: 533px;
+    padding: 88px 80px;
+  }
+}
+
+.modal__close-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: transparent;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.modal__close-icon {
+  @media screen and (min-width: 768px) {
+    width: 31.25px;
+    height: 31.25px;
+  }
+}
+
+.modal__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 184px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 1.18;
+    max-width: 608px;
+    margin-bottom: 56px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 64px;
+    line-height: 1.17;
+  }
+}
+
+.modal__button {
+  display: block;
+  padding: 16px 51px;
+  background-color: var(--primary-text-color);
+  border-radius: 16px;
+  text-align: center;
+  max-width: 173px;
+  margin: 0 auto;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    max-width: 306px;
+    padding: 16px 82px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.modal__button-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.12;
+  text-transform: uppercase;
+  color: var(--modal-bg-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 1.19;
+  }
+}

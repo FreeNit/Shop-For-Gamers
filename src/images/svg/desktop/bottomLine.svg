@@ -1,0 +1,11 @@
+<svg width="1280" height="71" viewBox="0 0 1280 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_9037_846)">
+<path d="M0 41H540V22H1280" stroke="#28780D"/>
+</g>
+<defs>
+<filter id="filter0_d_9037_846" x="-25" y="0.5" width="1330" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feBlend mode="normal" in2="BackgroundImageFix" result="shape"/>
+<feBlend mode="normal" in="SourceGraphic" >
+</filter>
+</defs>
+</svg>
