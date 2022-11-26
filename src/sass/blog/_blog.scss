@@ -203,8 +203,16 @@ gap: 16px;
 .line {
   display: inline-block;
   justify-content: center;
+  width: 10px;
+  height: 10px;
+  @media screen and (min-width: 768px) {
+  width: 12px;
+  height: 12px;
+  }
+  @media screen and (min-width: 1280px) {
   width: 14px;
   height: 14px;
+}
   border-radius: 15px;
   background-color: var(--secondary-text-color);
 }
