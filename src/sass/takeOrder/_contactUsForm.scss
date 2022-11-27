@@ -1,7 +1,10 @@
 .button-desktop {
-  display: none;
+  position: absolute;
+  z-index: -100;
 
   @media screen and (min-width: 1280px) {
+    position: static;
+    z-index: 0;
     display: flex;
     justify-content: center;
     column-gap: 20px;
@@ -77,6 +80,10 @@
   border-color: var(--primary-text-color);
   outline-color: transparent;
   color: #ffffff;
+
+  &.err {
+    border-color: var(--error-border-color);
+  }
 }
 
 .standard-select {
@@ -113,6 +120,12 @@ select {
   grid-template-areas: 'select';
   align-items: center;
   position: relative;
+
+  select {
+    &.err {
+      border-bottom: 2px solid var(--error-border-color);
+    }
+  }
 
   select,
   &::after {
