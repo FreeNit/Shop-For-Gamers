@@ -7,20 +7,23 @@
   margin: 0;
   padding-top: 136px;
   padding-bottom: 48px;
-}
 
-.blogArticle-thumb {
-  background-image: url('./../images/decorLines/mobile/topLine.svg'),
-    url('./../images/decorLines/mobile/bottomLine.svg');
+  background-image: url('../images/svg/mobile/topLine_3.svg'),
+    url('../images/svg/mobile/bottomLine_3.svg');
   background-repeat: no-repeat;
-  background-position: top 53px left 0, top 63px left 0;
-  background-size: 100%, 100%;
+  background-position: 0px 192px, 0px 199px;
+  background-size: 100%;
 
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    background-image: url('./../images/decorLines/tablet/topLine.svg'),
-      url('./../images/decorLines/tablet/bottomLine.svg');
-    background-repeat: no-repeat;
-    background-position: top 130px left 0, top 140px left 0;
+  @include media(768px) {
+    background-image: url('../images/svg/tablet/topLine_2.svg'),
+      url('../images/svg/tablet/bottomLine_2.svg');
+    background-position: 0px 377px, 0px 385px;
+
+    @include media(1280px) {
+      background-image: url('../images/svg/desktop/topLine.svg'),
+        url('../images/svg/desktop/bottomLine.svg');
+      background-position: 0px 322px, 0px 358px;
+    }
   }
 }
 
@@ -140,10 +143,6 @@ picture > img {
     margin: 0 auto;
     padding-top: 120px;
     padding-bottom: 120px;
-    background-image: url('./../images/decorLines/desktop/topLine.svg'),
-      url('./../images/decorLines/desktop/bottomLine.svg');
-    background-repeat: no-repeat;
-    background-position: top 175px left 0, top 185px left 0;
   }
 
   .blog-article__top-container {

@@ -42,7 +42,7 @@
         </div>
         <div class="select">
           <select name="Quantity" id="quantity" onchange="quantityValidation()">
-            <option selected>Quantity</option>
+            <option selected disabled hidden>Quantity</option>
             <option value="1">1</option>
             <option value="2">2</option>
           </select>
@@ -50,8 +50,10 @@
         </div>
         <div class="select">
           <select name="payment" id="payment" onchange="paymentValidation()">
-            <option selected>Payment</option>
+            <option selected disabled hidden>Payment</option>
             <option value="visa">Visa</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="american express">American Express</option>
           </select>
 
           <span class="focus"></span>
@@ -69,20 +71,12 @@
 
       <div class="button button-mobile-tablet">
         <div class="button__buy">
-          <button
-            id="buyitnow-button"
-            class="buyitnow-button button__now"
-            type="submit"
-          >
+          <button class="buyitnow-button button__now" type="submit">
             buy it now
           </button>
         </div>
         <div class="button__add">
-          <button
-            id="addtocart-button"
-            class="addtocart-button button__card"
-            type="submit"
-          >
+          <button class="addtocart-button button__card" type="submit">
             add to card
           </button>
         </div>
@@ -91,20 +85,12 @@
 
     <div class="button-desktop">
       <div class="button__buy">
-        <button
-          id="buyitnow-button"
-          class="buyitnow-button button__now"
-          type="submit"
-        >
+        <button class="buyitnow-button button__now" type="submit">
           buy it now
         </button>
       </div>
       <div class="button__add">
-        <button
-          id="addtocart-button"
-          class="addtocart-button button__card"
-          type="submit"
-        >
+        <button class="addtocart-button button__card" type="submit">
           add to card
         </button>
       </div>
