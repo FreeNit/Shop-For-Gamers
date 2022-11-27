@@ -1,0 +1,32 @@
+.slider {
+  padding-top: 120px;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--secondary-text-color);
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 16px;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.25;
+  color: var(--secondary-text-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+// .slick-dots li.slick-active button {
+//   width: 40px;
+//   height: 16px;
+// }

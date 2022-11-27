@@ -1,0 +1,17 @@
+$('.one-time').slick({
+  dots: true,
+  arrows: false,
+  touchMove: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  infinite: true,
+  speed: 1500,
+  infinite: true,
+  pauseOnFocus: true,
+  pauseOnHover: true,
+  pauseOnDotsHover: true,
+  swipe: true,
+  touchThreshold: 10,
+  slidesToShow: 1,
+  adaptiveHeight: true,
+});
