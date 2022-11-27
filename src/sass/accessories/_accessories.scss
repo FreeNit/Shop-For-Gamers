@@ -92,6 +92,7 @@
 
 .product {
   @include accessories();
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 24px;
@@ -217,11 +218,9 @@
   }
 
   background-image: url('../images/svg/mobile/topLine_3.svg'),
-  url('../images/svg/mobile/bottomLine_3.svg');
+    url('../images/svg/mobile/bottomLine_3.svg');
   background-repeat: no-repeat;
-  background-position: top 154px left,
-  top 158px left,
-  center;
+  background-position: top 154px left, top 158px left, center;
   background-size: 100%;
 
   @include media(768px) {
@@ -252,7 +251,6 @@
     }
   }
 
-
   @media screen and (min-width: 1280px) {
     background-image: url('/src/images/decorLines/desktop/topLine_accessories.svg'),
       url('/src/images/decorLines/desktop/bottomLine_accessories.svg');
@@ -263,7 +261,6 @@
 
     @media screen and (min-width: 768px) {
       // padding-top: 120px;
-
     }
   }
 }
