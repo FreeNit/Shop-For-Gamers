@@ -5,7 +5,7 @@ $('.one-time').slick({
   autoplay: true,
   autoplaySpeed: 3000,
   infinite: true,
-  speed: 3000,
+  speed: 1000,
   infinite: true,
   pauseOnFocus: true,
   pauseOnHover: true,
