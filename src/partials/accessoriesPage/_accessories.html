@@ -1,22 +1,46 @@
-<section class="accessories zzzz">
+<section class="accessories">
   <div class="container blogArticle-thumb">
-    <ul class="menu list">
+    <ul class="menu list" id="myBtnContainer">
       <li class="menu__list">
-        <button class="menu__button" type="button">All</button>
+        <button
+          class="menu__button btnFilter"
+          type="button"
+          onclick="filterSelection('all')"
+        >
+          All
+        </button>
       </li>
       <li class="menu__list">
-        <button class="menu__button" type="button">Headsets</button>
+        <button
+          class="menu__button"
+          type="button"
+          onclick="filterSelection('headset')"
+        >
+          Headsets
+        </button>
       </li>
       <li class="menu__list">
-        <button class="menu__button" type="button">Keyboards</button>
+        <button
+          class="menu__button"
+          type="button"
+          onclick="filterSelection('keyboard')"
+        >
+          Keyboards
+        </button>
       </li>
       <li class="menu__list">
-        <button class="menu__button" type="button">Mouses</button>
+        <button
+          class="menu__button"
+          type="button"
+          onclick="filterSelection('mouse')"
+        >
+          Mouses
+        </button>
       </li>
     </ul>
     <h1 class="title">All accessories</h1>
-    <ul class="product list">
-      <li class="product__item">
+    <ul class="product list containerFilter">
+      <li class="product__item filterDiv headset">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
@@ -58,7 +82,7 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv mouse">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
@@ -102,13 +126,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv keyboard">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/steampunk-anti-ghosting-keyboard.jpg"
-              srcset="/src/images/all-accessories/steampunk-anti-ghosting-keyboard.jpg x1, /src/images/all-accessories/steampunk-anti-ghosting-keyboard_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/steampunk-anti-ghosting-keyboard.jpg    1x,
+                /src/images/all-accessories/steampunk-anti-ghosting-keyboard_x2.jpg 2x
+              "
               alt="keyboard"
               title="keyboard"
               width="285"
@@ -143,7 +170,7 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv headset">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
@@ -185,13 +212,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv headset">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/xiberia-k9-pro-headset.jpg"
-              srcset="/src/images/all-accessories/xiberia-k9-pro-headset.jpg x1, /src/images/all-accessories/xiberia-k9-pro-headset_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/xiberia-k9-pro-headset.jpg    1x,
+                /src/images/all-accessories/xiberia-k9-pro-headset_x2.jpg 2x
+              "
               alt="headset"
               title="headset"
               width="285"
@@ -224,13 +254,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv keyboard">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/backlit-keyboard.jpg"
-              srcset="/src/images/all-accessories/backlit-keyboard.jpg x1, /src/images/all-accessories/backlit-keyboard_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/backlit-keyboard.jpg    1x,
+                /src/images/all-accessories/backlit-keyboard_x2.jpg 2x
+              "
               alt="headset"
               title="headset"
             />
@@ -262,13 +295,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv mouse">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/darshion-3200-gaming-mouse.jpg"
-              srcset="/src/images/all-accessories/darshion-3200-gaming-mouse.jpg x1, /src/images/all-accessories/darshion-3200-gaming-mouse_x2.jpg 2x"
+              srcset="
+                /src/images/all-accessories/darshion-3200-gaming-mouse.jpg    1x,
+                /src/images/all-accessories/darshion-3200-gaming-mouse_x2.jpg 2x
+              "
               alt="gaming"
               title="mouse"
             />
@@ -300,13 +336,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv keyboard">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/k569-keyboard.jpg"
-              srcset="/src/images/all-accessories/k569-keyboard.jpg x1, /src/images/all-accessories/k569-keyboard_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/k569-keyboard.jpg    1x,
+                /src/images/all-accessories/k569-keyboard_x2.jpg 2x
+              "
               alt="k569"
               title="keyboard"
             />
@@ -340,13 +379,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv keyboard">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/steampunk-keyboard.jpg"
-              srcset="/src/images/all-accessories/steampunk-keyboard.jpg x1, /src/images/all-accessories/steampunk-keyboard_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/steampunk-keyboard.jpg    1x,
+                /src/images/all-accessories/steampunk-keyboard_x2.jpg 2x
+              "
               alt="steampunk"
               title="keyboard"
             />
@@ -380,13 +422,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv headset">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/wired-gaming-headphone.jpg"
-              srcset="/src/images/all-accessories/wired-gaming-headphone.jpg x1, /src/images/all-accessories/wired-gaming-headphone_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/wired-gaming-headphone.jpg    1x,
+                /src/images/all-accessories/wired-gaming-headphone_x2.jpg 2x
+              "
               alt="headphone"
               title="headset"
             />
@@ -418,13 +463,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv headset">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/havit-gaming-headset.jpg"
-              srcset="/src/images/all-accessories/havit-gaming-headset.jpg x1, /src/images/all-accessories/havit-gaming-headset_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/havit-gaming-headset.jpg    1x,
+                /src/images/all-accessories/havit-gaming-headset_x2.jpg 2x
+              "
               alt="havit-gaming"
               title="headset"
             />
@@ -456,13 +504,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv headset">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/somic-g936n-headset.jpg"
-              srcset="/src/images/all-accessories/somic-g936n-headset.jpg x1, /src/images/all-accessories/somic-g936n-headset_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/somic-g936n-headset.jpg    1x,
+                /src/images/all-accessories/somic-g936n-headset_x2.jpg 2x
+              "
               alt="somic-g936n"
               title="headset"
             />
@@ -494,13 +545,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv mouse">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/aula-si9006-mouse.jpg"
-              srcset="/src/images/all-accessories/aula-si9006-mouse.jpg x1, /src/images/all-accessories/aula-si9006-mouse_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/aula-si9006-mouse.jpg    1x,
+                /src/images/all-accessories/aula-si9006-mouse_x2.jpg 2x
+              "
               alt="si9006"
               title="mouse"
             />
@@ -532,13 +586,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv mouse">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/hxsj-3200-mouse.jpg"
-              srcset="/src/images/all-accessories/hxsj-3200-mouse.jpg x1,  /src/images/all-accessories/hxsj-3200-mouse_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/hxsj-3200-mouse.jpg    1x,
+                /src/images/all-accessories/hxsj-3200-mouse_x2.jpg 2x
+              "
               alt="hxsj-3200"
               title="mouse"
             />
@@ -572,13 +629,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv headset">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/g95-gaming-headset.jpg"
-              srcset="/src/images/all-accessories/g95-gaming-headset.jpg x1,  /src/images/all-accessories/g95-gaming-headset_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/g95-gaming-headset.jpg    1x,
+                /src/images/all-accessories/g95-gaming-headset_x2.jpg 2x
+              "
               alt="g95-gaming"
               title="headset"
             />
@@ -610,13 +670,16 @@
           </div>
         </a>
       </li>
-      <li class="product__item">
+      <li class="product__item filterDiv keyboard">
         <a href="/src/takeOrder.html" class="product__link link">
           <div class="product__frame">
             <img
               class="image"
               src="/src/images/all-accessories/ymdk-double-shot-04-keyboard.jpg"
-              srcset="/src/images/all-accessories/ymdk-double-shot-04-keyboard.jpg x1,  /src/images/all-accessories/ymdk-double-shot-04-keyboard_x2.jpg 2x "
+              srcset="
+                /src/images/all-accessories/ymdk-double-shot-04-keyboard.jpg    1x,
+                /src/images/all-accessories/ymdk-double-shot-04-keyboard_x2.jpg 2x
+              "
               alt="keyboard"
               title="keyboard"
             />

@@ -66,28 +66,30 @@
       </div>
       <div class="cont-form-wrap">
         <p class="cont-form-text">CONTACT US</p>
-        <form action="javascript:void(0); autocomplete="off">
+        <form action="javascript:void(0);" autocomplete="off" id="form">
           <div class="cont-form-field">
             <input
               type="text"
-              class="cont-imput"
+              class="cont-input"
               name="cont-name"
-              id="cont-name"
+              id="nameField"
               placeholder="Name"
-              pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-              title="Username must be two words separated by space"
+              required
+              onkeyup="nameValidation()"
             />
-            <label for="cont-name" class="cont-label">Name</label>
+            <label for="nameField" class="cont-label">Name</label>
           </div>
           <div class="cont-form-field">
             <input
               type="email"
-              class="cont-imput"
+              class="cont-input"
               name="cont-email"
-              id="cont-email"
+              id="emailField"
               placeholder="Email"
+              required
+              onkeyup="emailValidation()"
             />
-            <label for="cont-email" class="cont-label">Email</label>
+            <label for="emailField" class="cont-label">Email</label>
           </div>
           <div>
             <label for="cont-mess" class="cont-label-text"
