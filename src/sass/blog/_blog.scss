@@ -1,7 +1,7 @@
 .blog {
   background-color: #01383a;
   padding-top: 144px;
-  padding-bottom: 112px;
+  padding-bottom: 48px;
   @media screen and (min-width: 768px) {
     padding-top: 256px;
     padding-bottom: 120px;
@@ -20,7 +20,8 @@
   }
   @media screen and (min-width: 1280px) {
     background-image: url('./../images/decorLines/desktop/topLine.svg'),
-      url('./../images/decorLines/desktop/bottomLine.svg');
+      url('./../images/decorLines/desktop/bottomLine.svg'),
+      url('./../images/fons/desctop/background_3.jpg');
     background-repeat: no-repeat;
     background-position: top 292px left 0, top 300px left 0;
   }
@@ -90,6 +91,7 @@
       margin: 0;
       display: flex;
       justify-content: space-between;
+      align-items: baseline;
     }
   }
 }
@@ -157,11 +159,6 @@
     display: block;
     margin-left: 40px;
   }
-  //     @media screen and (min-width: 1280px) {
-  //         display: flex;
-  //     align-items: baseline;
-  //    justify-content: space-between;
-  //     }
 }
 .blog-bottom-text {
   font-weight: 400;
@@ -194,5 +191,49 @@
 .blog-image {
   @media screen and (max-width: 767px) {
     width: 100vw;
+  }
+}
+// ---Loading---//
+
+.loading {
+padding-top: 48px;
+display: flex;
+justify-content: center;
+gap: 16px;
+}
+.line {
+  display: inline-block;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  @media screen and (min-width: 768px) {
+  width: 12px;
+  height: 12px;
+  }
+  @media screen and (min-width: 1280px) {
+  width: 14px;
+  height: 14px;
+}
+  border-radius: 15px;
+  background-color: var(--secondary-text-color);
+}
+.loading .line:nth-last-child(1) {
+  animation: loadingB 1.5s 1s infinite;
+}
+.loading .line:nth-last-child(2) {
+  animation: loadingB 1.5s 0.5s infinite;
+}
+.loading .line:nth-last-child(3) {
+  animation: loadingB 1.5s 0s infinite;
+}
+@keyframes loadingB {
+  0% {
+    width: 15px;
+  }
+  50% {
+    width: 40px;
+  }
+  100% {
+    width: 15px;
   }
 }
